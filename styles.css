@@ -1,0 +1,362 @@
+/* etiquetas globales */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: content-box;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --red: rgb(236, 0, 0, 1);
+    --white: white;
+    --black: black;
+    --gray: #f4f4f4;
+}
+
+header {
+    background-color: var(--red);
+    height: 100px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 50px 0;
+    background: linear-gradient(#aa1229, #ff481b, rgb(248, 117, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: var(--white);
+}
+
+footer {
+    margin-top: 50px;
+    
+}
+
+i{
+   font-size: 30px;
+   color: var(--white);
+}
+
+/* class */
+ 
+/* container navbar */
+
+.container-header {
+    background-color: var(--red);
+}
+
+.imgLogo {
+    height: 100px;
+    width: 90px;
+}
+
+.itemsNav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.listNav {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.listNav a:hover {
+    cursor: pointer;
+    color: var(--black);
+}
+
+/* Etiquetas preestablecidas */
+
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-p {
+    font-size: 17px;
+    font-weight: 400px;
+}
+
+.p-small {
+    font-size: 13px;
+}
+
+.titulos {
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+/* section container hero */
+
+.section-container-red {
+    background-color: var(--red);
+}
+
+.hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgHero {
+    width: 550px;
+    height: 350px;
+    padding: 30px 5px;
+}
+
+/* section container indumentaria */
+
+.container-section-gray {
+    background-color: var(--gray);
+}
+
+.section-container h2 {
+    margin: 20px;
+    background: linear-gradient(#aa1229, #ff481b, rgb(248, 117, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-indumentaria {
+    background-color: var(--white);
+    height: 350px;
+    width: 400px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.content-indumentaria {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.card-indumentaria-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 150px;
+}
+
+.card-indumentaria:first-child .card-indumentaria-img {
+    background-image: url(./img/lineasrojasyblancas.jpg);
+}
+
+.card-indumentaria:nth-child(2) .card-indumentaria-img {
+    background-image: url(./img/fondorojoblancowebp);
+}
+
+.card-indumentaria:last-child .card-indumentaria-img {
+    background-image: url(./img/fondoleon.jpeg);
+}
+
+
+.camiseta-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 170px;
+    height: 150px;
+}
+
+.content-indumentaria:first-child .camiseta-img {
+    background-image: url(./img/camisetaAdidas.png);
+}
+
+.content-indumentaria:nth-child(2) .camiseta-img {
+    background-image: url(./img/camisetaSuplente.webp)
+}
+
+.content-indumentaria:last-child .camiseta-img {
+    background-image: url(./img/camisetaEntrenamiento.webp);
+}
+
+.button-indumentaria {
+    background-color: var(--red);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--white);
+    padding: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* section container eventos */
+
+.section-container-white {
+    background-color: var(--white);
+}
+
+.card-eventos {
+    background-color: var(--gray);
+    height: 300px;
+    width: 330px;
+    padding: 20px;
+        margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.fecha-horario-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.fecha-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    color:var(--red);
+    font-size: 25px;
+}
+
+.info-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 30px;
+    padding-left: 40px;
+}
+
+.container-eventos-img {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-eventos-img {
+    background-image: url(https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/Rm_mediano.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.text-info-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.button-eventento{
+background: linear-gradient(#b4051f, #f0471c, rgb(243, 132, 132));
+color: var(--white);
+border: none;
+border-radius: 5px;
+font-size: 20px;
+padding: 5px;
+cursor: pointer;
+}
+
+.card-eventos-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+/* section container deportes  */
+
+.container-img-deportes{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 200px  200px 200px;
+    grid-auto-rows: 1 fr;
+    height: 300px;
+    padding: 20px;
+    gap:15px;
+}
+
+.container-img-deportes:last-child .deportes-img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    background-image: url(./img/lineasrojasyblancas.jpg);
+}
+
+.container-img-deportes:nth-child(2) .deportes-img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    background-image: url(./img/voley.jpeg) no-repeat center/cover;
+}
+
+.container-img-deportes:nth-child(3) .deportes-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    background-image: url(./img/basquet.jpeg) no-repeat center/cover;
+}
+
+.container-img-deportes:last-child .deportes-img {
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+    background-image: url(./img/hockey.jpeg) no-repeat center/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
