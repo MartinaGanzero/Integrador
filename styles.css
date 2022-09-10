@@ -40,22 +40,13 @@ h1 {
     flex-direction: column;
 }
 
-a{
+a {
     color: var(--white);
 }
 
-footer {
-    margin-top: 50px;
-    
-}
-
-i{
-   font-size: 30px;
-   color: var(--white);
-}
 
 /* class */
- 
+
 /* container navbar */
 
 .container-header {
@@ -171,7 +162,7 @@ i{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 20px;
 }
 
 .card-indumentaria-img {
@@ -203,15 +194,15 @@ i{
     height: 150px;
 }
 
-.content-indumentaria:first-child .camiseta-img {
-    background-image: url(./img/camisetaAdidas.png);
+.card-indumentaria:first-child .camiseta-img {
+    background-image: url(./img/camisetatitular.webp);
 }
 
-.content-indumentaria:nth-child(2) .camiseta-img {
-    background-image: url(./img/camisetaSuplente.webp)
+.card-indumentaria:nth-child(2) .camiseta-img {
+    background-image: url(./img/camisetaSuplente.webp);
 }
 
-.content-indumentaria:last-child .camiseta-img {
+.card-indumentaria:last-child .camiseta-img {
     background-image: url(./img/camisetaEntrenamiento.webp);
 }
 
@@ -237,7 +228,7 @@ i{
     height: 300px;
     width: 330px;
     padding: 20px;
-        margin: 20px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -256,7 +247,7 @@ i{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 100px;
-    color:var(--red);
+    color: var(--red);
     font-size: 25px;
 }
 
@@ -276,14 +267,6 @@ i{
     gap: 20px;
 }
 
-.card-eventos-img {
-    background-image: url(https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/Rm_mediano.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-}
 
 .text-info-evento {
     display: flex;
@@ -292,17 +275,18 @@ i{
     gap: 10px;
 }
 
-.button-eventento{
-background: linear-gradient(#b4051f, #f0471c, rgb(243, 132, 132));
-color: var(--white);
-border: none;
-border-radius: 5px;
-font-size: 20px;
-padding: 5px;
-cursor: pointer;
+.button-eventento {
+    background: linear-gradient(#b4051f, #f0471c, rgb(243, 132, 132));
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.card-eventos-img {
+.logo-eventos-img {
+    background-image: url(https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/Rm_mediano.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -310,53 +294,159 @@ cursor: pointer;
     height: 100px;
 }
 
-/* section container deportes  */
-
-.container-img-deportes{
-    display: grid;
-    place-content: center;
-    grid-template-columns: 200px  200px 200px;
-    grid-auto-rows: 1 fr;
-    height: 300px;
-    padding: 20px;
-    gap:15px;
+.card-eventos-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
 }
 
-.container-img-deportes:last-child .deportes-img {
+.card-eventos:first-child .card-eventos-img {
+    background-image: url(./img/salbetEscudo.png);
+}
+
+.card-eventos:nth-child(2) .card-eventos-img {
+    background-image: url(./img/zubeldiaEscudo.png)
+}
+
+.card-eventos:last-child .card-eventos-img {
+    background-image: url(./img/jsvEscudo.png);
+}
+
+
+/* section container deportes  */
+
+.container-img-deportes {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 200px 200px 200px 250px;
+    grid-template-rows: 250px 250px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.deportes-img:first-child {
     grid-column: 1/3;
     grid-row: 1/2;
 
-    background-image: url(./img/lineasrojasyblancas.jpg);
+    background: url(./img/futbol.jpg) no-repeat center/cover;
 }
 
-.container-img-deportes:nth-child(2) .deportes-img {
+.deportes-img:nth-child(2) {
     grid-column: 3/4;
     grid-row: 1/2;
 
-    background-image: url(./img/voley.jpeg) no-repeat center/cover;
+    background: url(./img/voley.jpeg) no-repeat center/cover;
 }
 
-.container-img-deportes:nth-child(3) .deportes-img {
+.deportes-img:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+    background: url(./img/natacion.jpg) no-repeat center/cover;
+}
+
+.deportes-img:nth-child(4) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+    background: url(./img/basquet.jpeg) no-repeat center/cover;
+}
+
+.deportes-img:nth-child(5) {
     grid-column: 1/2;
     grid-row: 2/3;
 
-    background-image: url(./img/basquet.jpeg) no-repeat center/cover;
+    background: url(./img/tenis.jpg) no-repeat center/cover;
 }
 
-.container-img-deportes:last-child .deportes-img {
+.deportes-img:last-child {
     grid-column: 2/4;
     grid-row: 2/3;
 
-    background-image: url(./img/hockey.jpeg) no-repeat center/cover;
+    background: url(./img/hockey.jpeg) no-repeat center/cover;
 }
 
+/* Section formulario */
 
+.card-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.title-form {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300px;
+    color: var(--red);
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
+input {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
 
+.button-form {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: var(--white);
+    color: #7e7777;
+}
 
+/* section footer */
 
+footer {
+    max-width: 1400px;
+    height: 70px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.list-info{
+    color: var(--white);
+    font-size: 15px;
+}
 
+.list-info i{
+font-size: 15px;
+color: var(--white);
+}
 
+i {
+    font-size: 30px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.container-list p {
+    font-size: 15px;
+    color: var(--white);
+}
+
+.items-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

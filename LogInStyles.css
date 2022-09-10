@@ -1,0 +1,177 @@
+/* etiquetas globales */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: content-box;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --red: rgb(236, 0, 0, 1);
+    --white: white;
+    --black: black;
+    --gray: #c4c1c1;
+}
+
+/* Navbar */
+nav {
+    background-color: var(--red);
+    display: flex;
+    justify-content: center
+}
+
+
+.imgLogo {
+    width: 80px;
+    height: 80px;
+}
+
+/* section */
+h1 {
+    background: linear-gradient(#aa1229, #ff481b, rgb(248, 117, 117));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 400px;
+    margin: 20px;
+}
+
+.img-fondo {
+    background-image: url(./img/hinchada.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.70);
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.formulario input {
+    width: 300px;
+}
+
+label {
+    font-size: 18px;
+    color: var(--gray);
+}
+
+input {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+.checkbox-container label {
+    font-size: 13px;
+}
+
+.button-form {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    background: linear-gradient(#aa1229, #ff481b, rgb(248, 117, 117));
+    color: var(--white);
+}
+
+.password{
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #4c4c4ce0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer */
+footer {
+    height: 40px;
+    padding: 15px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--red);
+}
+
+i {
+    font-size: 28px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.items-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.text-copyrights{
+    font-size: 10px;
+    color: var(--white);
+}
+
+/* reponsive */
+@media (max-width: 480px){
+    .formulario input {
+        width: 200px;
+    }
+
+    .button-form {
+        width: 200px;
+    }
+}

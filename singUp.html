@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./singUpStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Bilardo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img class="imgLogo"
+                    src="https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/Rm_mediano.png">
+            </a>
+            <p class="text-navbar">¿Ya tenés cuenta?<a class="a-navbar" href="./logIn.html"> Ingresá acá</a> </p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="img-fondo">
+            <section>
+                <h1>Registrarse</h1>
+                <form>
+                    <div class=" container-form">
+                        <div class="formulario">
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label for="documento">DNI</label>
+                            <input type="number" id="documento" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" id="fecha">
+                        </div>
+
+                        <div class="formulario">
+                            <label for="mail">Mail</label>
+                            <input type="email" id="mail" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label for="Pais">Nacionalidad</label>
+                            <input type="text" id="pais">
+                        </div>
+
+                        <div class="formulario">
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" id="Contraseña" required>
+                        </div>
+                    </div>
+                    <button class="button-form" type="submit"><a href="./logIn.html">Enviar </a> </button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-list"> 
+        <ul class="items-footer">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+        </ul>
+        <span class="text-copyrights">Copyright © Martina Ganzero</span>
+    </div>
+    </footer>
+
+</body>
+
+</html>
