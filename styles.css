@@ -505,7 +505,19 @@ i {
     }
 }
 
-@media(max-width:850px)
+@media(max-width:850px){
+    .imgHero {
+        display: none;
+    }
+
+    .hero{
+        background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.7)), url(./img/uno.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
 
 @media(max-width: 600px) {
 
