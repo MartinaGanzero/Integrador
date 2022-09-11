@@ -480,13 +480,12 @@ i {
         flex-direction: column;
         display: none;
         z-index: 9999;
-        height: calc(100vh - 100px);
         gap: 30px;
         top: 100px;
         right: 0;
         width: 100%;
         background-color: var(--red);
-        padding-top: 30px;
+        padding: 30px;
     }
 
     #toggle-menu:checked+.itemsNav {
