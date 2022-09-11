@@ -505,12 +505,12 @@ i {
     }
 }
 
-@media(max-width:850px){
+@media(max-width:850px) {
     .imgHero {
         display: none;
     }
 
-    .hero{
+    .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.7)), url(./img/uno.jpeg);
         background-position: center;
         background-size: cover;
@@ -533,10 +533,18 @@ i {
     .card-indumentaria-img {
         width: 320px;
     }
-    
-    .camiseta-img{
+
+    .camiseta-img {
         width: 130px;
         height: 140px;
     }
+
+    .list-info {
+        display: none;
+    }
+
+   footer{
+justify-content: center
+   }
 
 }
