@@ -517,6 +517,11 @@ i {
         background-repeat: no-repeat;
     }
 
+    h1{
+     background: linear-gradient(#aa1229, #ff481b, rgb(248, 117, 117));
+    -webkit-background-clip: text;
+    color: transparent;
+    }
 }
 
 @media(max-width: 600px) {
