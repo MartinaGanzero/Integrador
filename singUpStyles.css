@@ -21,12 +21,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    height: 100px;
 }
 
 .imgLogo {
-    width: 90px;
-    height: 90px;
+    height: 180px;
+    width: 180px;
 }
 
 .text-navbar {

@@ -19,13 +19,15 @@
 nav {
     background-color: var(--red);
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    height: 90px;
 }
 
 
 .imgLogo {
-    width: 80px;
-    height: 80px;
+    height: 180px;
+    width: 180px;
 }
 
 /* section */
@@ -98,11 +100,6 @@ input {
 
 .checkbox-container label {
     font-size: 13px;
-}
-
-.checkbox-container input{
-    height: 12px;
-    width: 12px;
 }
 
 .button-form {
